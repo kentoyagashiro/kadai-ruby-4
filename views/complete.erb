@@ -15,7 +15,7 @@
       <% name2 = params['name'] %>
       <% name3 = params['mail'] %>
       <% name4 = params['tel'] %>
-      <% name5 = params['content'] %>
+      <% name5 = params['content'].gsub(/\r\n|\r|\n/, "<br>") %>
     <header>
         <!-- 576px以上の画面幅のとき、メニューを表示する（それ未満なら折りたたむ）指定を追加 -->
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
